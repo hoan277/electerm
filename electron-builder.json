@@ -39,6 +39,7 @@
     ]
   },
   "snap": {
-    "publish": ["github", "snapStore"]
+    "publish": ["github", "snapStore"],
+    "browser-sandbox": { "allow-sandbox": false }
   }
 }
