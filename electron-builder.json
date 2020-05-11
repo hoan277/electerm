@@ -41,7 +41,10 @@
   "snap": {
     "publish": ["github", "snapStore"],
     "plugs": ["desktop", "desktop-legacy", "home", "x11", "unity7", "network", "gsettings", "pulseaudio", "opengl", {
-      "browser-sandbox": { "allow-sandbox": false }
+      "browser-sandbox": {
+        "interface": "browser-support",
+        "allow-sandbox": false
+      }
     }]
   }
 }
