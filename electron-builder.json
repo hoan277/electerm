@@ -4,6 +4,7 @@
     "app": "work/app",
     "output": "dist"
   },
+  "afterPack": "./bin/after-pack.js",
   "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
   "win": {
     "target": ["tar.gz"],
@@ -39,12 +40,6 @@
     ]
   },
   "snap": {
-    "publish": ["github", "snapStore"],
-    "plugs": ["desktop", "desktop-legacy", "home", "x11", "unity7", "network", "gsettings", "pulseaudio", "opengl", {
-      "browser-sandbox": {
-        "interface": "browser-support",
-        "allow-sandbox": true
-      }
-    }]
+    "publish": ["github", "snapStore"]
   }
 }
