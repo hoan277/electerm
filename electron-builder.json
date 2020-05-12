@@ -40,6 +40,9 @@
     ]
   },
   "snap": {
-    "publish": ["github", "snapStore"]
+    "publish": ["github", "snapStore"],
+    "plugs": ["default", {
+      "browser-sandbox": { "interface": "browser-support", "allow-sandbox": true }
+    }]
   }
 }
